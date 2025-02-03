@@ -42,7 +42,7 @@ struct Translation {
 async fn main() -> Result<()> {
     let args = Args::parse();
     let settings = Config::builder()
-        .add_source(config::File::with_name("config2"))
+        .add_source(config::File::with_name("config"))
         .build()?
         .try_deserialize::<Settings>()?;
 
